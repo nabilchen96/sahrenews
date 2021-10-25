@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottom Navbar Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .flickity-button{
+        display: none;
+      }
+
+      .flickity-page-dots{
+        display: none;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .carousel-cell {
+        margin-right: 10px;
+      }
+
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      background-image: url('mountain.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+    "
+  >
+    <!-- Bottom Navbar -->
+    <br />
+    <nav class="navbar navbar-light d-flex justify-content-center">
+      <img
+        src="https://www.sahretech.com/favicon.ico"
+        style="width: 7%"
+        alt=""
+      />
+      &nbsp;&nbsp;
+      <a class="navbar-brand" href="#">
+        <span style="font-weight: 600">SAHRENEWS</span>
+      </a>
+    </nav>
+
+    <div class="mt-2">
+      <nav
+        class="navbar navbar-dark navbar-expand fixed-bottom"
+        style="background-color: #dee2e6"
+      >
+        <ul class="navbar-nav nav-justified w-100 d-flex">
+          <li class="nav-item d-flex justify-content-start">
+            <a href="#" class="nav-link" style="color: grey">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                fill="currentColor"
+                class="bi bi-house-door-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+                />
+              </svg>
+              <p
+                style="
+                  font-size: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 0 !important;
+                "
+              >
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-start">
+            <a href="#" class="nav-link" style="color: grey">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                fill="currentColor"
+                class="bi bi-newspaper"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"
+                />
+                <path
+                  d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"
+                />
+              </svg>
+              <p
+                style="
+                  font-size: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 0 !important;
+                "
+              >
+                Media
+              </p>
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a href="#" class="nav-link" style="color: grey">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                fill="currentColor"
+                class="bi bi-card-heading"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+                />
+                <path
+                  d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"
+                />
+              </svg>
+              <p
+                style="
+                  font-size: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 0 !important;
+                "
+              >
+                Kategori
+              </p>
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-end">
+            <a href="#" class="nav-link" style="color: grey">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                fill="currentColor"
+                class="bi bi-bookmark-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                />
+              </svg>
+              <p
+                style="
+                  font-size: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 0 !important;
+                "
+              >
+                Bookmark
+              </p>
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-end">
+            <a href="#" class="nav-link" style="color: grey">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+              <p
+                style="
+                  font-size: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 0 !important;
+                "
+              >
+                Akun
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <input
+        style="border-radius: 15px; height: 45px; border: none;"
+        type="text"
+        placeholder="cari berita ..."
+        class="form-control"
+      />
+    </div>
+
+    <div class="carousel mt-3" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell card" style="
+          border: none;
+          border-radius: 15px;
+          height: 320px;
+          width: 90%;
+          background-image: linear-gradient(2deg, black, transparent), url('city.jpg');
+          background-size: cover;
+          background-position: center;
+          background-color: #adb5bd;">
+        <div class="card-body">
+          <h5
+            class="text-white"
+            style="position: absolute; bottom: 0; margin-bottom: 1px"
+          >
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+            <p style="font-size: 10px; margin-top: 5px">Kompas</p>
+          </h5>
+        </div>
+      </div>
+      <div class="carousel-cell card" style="
+          border: none;
+          border-radius: 15px;
+          height: 320px;
+          width: 90%;
+          background-image: linear-gradient(2deg, black, transparent), url('soccer.jpg');
+          background-size: cover;
+          background-position: center;
+          background-color: #adb5bd;";>
+        <div class="card-body">
+          <h5
+            class="text-white"
+            style="position: absolute; bottom: 0; margin-bottom: 1px"
+          >
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+            <p style="font-size: 10px; margin-top: 5px">Kompas</p>
+          </h5>
+        </div>
+      </div>
+      <div class="carousel-cell card" style="
+          border: none;
+          border-radius: 15px;
+          height: 320px;
+          width: 90%;
+          background-image: linear-gradient(2deg, black, transparent), url('castel.jpg');
+          background-size: cover;
+          background-position: center;
+          background-color: #adb5bd;";>
+        <div class="card-body">
+          <h5
+            class="text-white"
+            style="position: absolute; bottom: 0; margin-bottom: 1px"
+          >
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+            <p style="font-size: 10px; margin-top: 5px">Kompas</p>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="mt-4">
+        <b>List Berita</b>
+      </p>
+      <div class="card mt-2" style="border-radius: 15px">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="mt-2 mb-1" style="font-size: 10px">
+                <span class="badge badge-primary">Kompas</span>
+                <span class="badge badge-primary">20 Oktober 2021</span>
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-share-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                />
+              </svg>
+              &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-bookmark-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                />
+              </svg>
+            </div>
+            <div class="col-4">
+              <div
+                class="w-100 h-100 bg-danger"
+                style="
+                  border-radius: 8px;
+                  background-image: url('avatar.png');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2" style="border-radius: 15px">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="mt-2 mb-1" style="font-size: 10px">
+                Kompas | 20 Oktober 2021
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-share-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                />
+              </svg>
+              &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-bookmark-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                />
+              </svg>
+            </div>
+            <div class="col-4">
+              <div
+                class="w-100 h-100 bg-danger"
+                style="
+                  border-radius: 8px;
+                  background-image: url('castel.jpg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2" style="border-radius: 15px">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <p class="mt-2 mb-1" style="font-size: 10px">
+                <span class="badge badge-primary">Kompas</span>
+                <span class="badge badge-primary">20 Oktober 2021</span>
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-share-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                />
+              </svg>
+              &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-bookmark-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                />
+              </svg>
+            </div>
+            <div class="col-4">
+              <div
+                class="w-100 h-100 bg-danger"
+                style="
+                  border-radius: 8px;
+                  background-image: url('teamwork.jpg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2" style="
+            border-radius: 8px;
+            background-image: linear-gradient(2deg, black, transparent), url('soccer2.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 350px;
+          "
+        >
+        <div class="card-body">
+          <div class="card" style="position: absolute; margin-right: 10px; margin-left: -10px; bottom: 0; margin-bottom: 10px">
+            <div class="card-body">
+              <h5 style="font-weight: 700;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              <p class="mt-2 mb-1" style="font-size: 10px">
+                <span class="badge badge-primary">Kompas</span>
+                <span class="badge badge-primary">20 Oktober 2021</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
