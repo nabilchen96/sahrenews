@@ -18,11 +18,11 @@
       * {
         box-sizing: border-box;
       }
-      .flickity-button{
+      .flickity-button {
         display: none;
       }
 
-      .flickity-page-dots{
+      .flickity-page-dots {
         display: none;
       }
 
@@ -45,16 +45,20 @@
     </style>
   </head>
 
-  <body>
+  <body style="
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('mountain.jpg');">
     <!-- Bottom Navbar -->
     <br />
     <nav class="navbar navbar-light d-flex justify-content-center">
-      <img
+      <!-- <img
         src="https://www.sahretech.com/favicon.ico"
         style="width: 7%"
         alt=""
       />
-      &nbsp;&nbsp;
+      &nbsp;&nbsp; -->
       <a class="navbar-brand" href="#">
         <span style="font-weight: 600">SAHRENEWS</span>
       </a>
@@ -206,14 +210,14 @@
 
     <div class="container">
       <input
-        style="border-radius: 15px; height: 45px;"
+        style="border-radius: 15px; height: 45px"
         type="text"
         placeholder="cari berita ..."
         class="form-control"
       />
     </div>
 
-    <div class="carousel mt-3" data-flickity='{ "wrapAround": true }'>
+    <!-- <div class="carousel mt-3" data-flickity='{ "wrapAround": true }'>
       <div class="carousel-cell card" style="
           border: none;
           border-radius: 15px;
@@ -271,46 +275,66 @@
           </h5>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
-      <p class="mt-4">
+      <div
+        class="card mt-2"
+        style="
+          border-radius: 8px;
+          background-image: linear-gradient(2deg, black, transparent),
+            url('soccer2.jpg');
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          height: 300px;
+        "
+      >
+        <div class="card-body">
+          <h5
+            class="text-white"
+            style="position: absolute; bottom: 0; margin-bottom: 1px"
+          >
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+            <p style="font-size: 10px; margin-top: 5px">Kompas</p>
+          </h5>
+        </div>
+      </div>
+
+      <!-- <p class="mt-4">
         <b>List Berita</b>
-      </p>
+      </p> -->
       <div class="card mt-2" style="border-radius: 15px">
         <div class="card-body">
           <div class="row">
             <div class="col-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               <p class="mt-2 mb-1" style="font-size: 10px">
-                Kompas | 20 Oktober 2021
-              </p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-share-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-                />
-              </svg>
-              &nbsp;
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-bookmark-star-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
-                />
-              </svg>
+                Kompas | 20 Oktober 2021 | 
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"> 
+                    <path
+                      d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                    />
+                  </svg> &nbsp;
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    fill="currentColor"
+                    class="bi bi-bookmark-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                    />
+                  </svg>
+                </p>
             </div>
             <div class="col-4">
               <div
@@ -333,34 +357,34 @@
             <div class="col-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               <p class="mt-2 mb-1" style="font-size: 10px">
-                Kompas | 20 Oktober 2021
+                Kompas | 20 Oktober 2021 |
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                &nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-bookmark-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                  />
+                </svg>
               </p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-share-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-                />
-              </svg>
-              &nbsp;
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-bookmark-star-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
-                />
-              </svg>
             </div>
             <div class="col-4">
               <div
@@ -383,34 +407,34 @@
             <div class="col-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               <p class="mt-2 mb-1" style="font-size: 10px">
-                Kompas | 20 Oktober 2021
+                Kompas | 20 Oktober 2021 |
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                &nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-bookmark-star-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
+                  />
+                </svg>
               </p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-share-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-                />
-              </svg>
-              &nbsp;
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                fill="currentColor"
-                class="bi bi-bookmark-star-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"
-                />
-              </svg>
             </div>
             <div class="col-4">
               <div
@@ -427,15 +451,18 @@
           </div>
         </div>
       </div>
-      <div class="card mt-2" style="
-            border-radius: 8px;
-            background-image: linear-gradient(2deg, black, transparent), url('soccer2.jpg');
-            background-size: cover;
-            background-position: top;
-            background-repeat: no-repeat;
-            height: 350px;
-          "
-        >
+      <div
+        class="card mt-2"
+        style="
+          border-radius: 8px;
+          background-image: linear-gradient(2deg, black, transparent),
+            url('soccer2.jpg');
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          height: 300px;
+        "
+      >
         <div class="card-body">
           <h5
             class="text-white"
